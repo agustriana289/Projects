@@ -49,6 +49,7 @@ function processPostList12(root)
                   a1E.alt = title;
                   a1E.textContent = title;
 
+                  liE.appendChild(l2E);
                   liE.appendChild(l3E);
                   l3E.appendChild(l4E);
                   l4E.appendChild(a1E);
