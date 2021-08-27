@@ -49,15 +49,10 @@ function processPostList12(root)
                   a1E.alt = title;
                   a1E.textContent = title;
 
-                  var a2E = document.createElement("span");
-                  a2E.setAttribute('class', "bpost text-secondary");
-                  a2E.textContent = by Agus Triana;
-
                   liE.appendChild(l2E);
                   liE.appendChild(l3E);
                   l3E.appendChild(l4E);
                   l4E.appendChild(a1E);
-                  l4E.appendChild(a2E);
                   elmt.appendChild(liE);
                }
 
