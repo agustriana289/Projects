@@ -33,7 +33,7 @@ function processPostList12(root)
 
                if (url && url.length > 0 && title && title.length > 0)
                {
-                  var liE = document.createElement("li");
+                  var liE = document.createElement('class', {'id':'case-item box box__second'});
 
                   var a1E = document.createElement("a");
                   a1E.href = url;
