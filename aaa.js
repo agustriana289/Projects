@@ -34,7 +34,7 @@ function processPostList12(root)
                if (url && url.length > 0 && title && title.length > 0)
                {
                   var liE = document.createElement('div');
-                  liE.setAttribute('class', "case-item box box__second mx-2 w-100");
+                  liE.setAttribute('class', "case-item box box__second mx-2 col");
                   var l2E = document.createElement('img');
                   l2E.setAttribute('class', "case-item__icon");
                   l2E.setAttribute('src', "https://svgshare.com/i/_aE.svg");
@@ -49,10 +49,15 @@ function processPostList12(root)
                   a1E.alt = title;
                   a1E.textContent = title;
 
+                  var a2E = document.createElement("span");
+                  a2E.setAttribute('class', "bpost text-secondary");
+                  a2E.textContent = by Agus Triana;
+
                   liE.appendChild(l2E);
                   liE.appendChild(l3E);
                   l3E.appendChild(l4E);
                   l4E.appendChild(a1E);
+                  l4E.appendChild(a2E);
                   elmt.appendChild(liE);
                }
 
