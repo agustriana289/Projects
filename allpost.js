@@ -33,14 +33,13 @@ function processPostList12(root)
 
                if (url && url.length > 0 && title && title.length > 0)
                {
-                  var liE = document.createElement("li");
-
+                  var liE = document.createElement("h3");
+                  var liE = setAttribute("class", "title title--h5");
                   var a1E = document.createElement("a");
                   a1E.href = url;
                   a1E.textContent = title;
 
                   liE.appendChild(a1E);
-
                   elmt.appendChild(liE);
                }
 
