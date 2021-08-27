@@ -34,7 +34,7 @@ function processPostList12(root)
                if (url && url.length > 0 && title && title.length > 0)
                {
                   var liE = document.createElement('div');
-                  liE.setAttribute('class', "case-item box box__second");
+                  liE.setAttribute('class', "case-item box box__second mx-2 w-100");
                   var l2E = document.createElement('img');
                   l2E.setAttribute('class', "case-item__icon");
                   l2E.setAttribute('src', "https://svgshare.com/i/_aE.svg");
@@ -44,7 +44,9 @@ function processPostList12(root)
                   l4E.setAttribute('class', "title title--h5");
 
                   var a1E = document.createElement("a");
+                  a1E.setAttribute('class', "text-secondary");
                   a1E.href = url;
+                  a1E.alt = title;
                   a1E.textContent = title;
 
                   liE.appendChild(l3E);
