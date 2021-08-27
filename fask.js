@@ -44,7 +44,7 @@ function processPostList12(root)
                   l4E.setAttribute('class', "title title--h5");
 
                   var a1E = document.createElement("a");
-                  a1E.setAttribute('class', "text-secondary");
+                  a1E.setAttribute('class', "bpost text-secondary");
                   a1E.href = url;
                   a1E.alt = title;
                   a1E.textContent = title;
