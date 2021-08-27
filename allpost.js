@@ -33,18 +33,15 @@ function processPostList12(root)
 
                if (url && url.length > 0 && title && title.length > 0)
                {
-                  var d1E = document.createElement("div");
-                  var d1E = setAttribute("class", "case-item box box__second");
-                  var d2E = document.createElement("div");
-                  var d3E = document.createElement("h3");
-                  var d3E = setAttribute("class", "title title--h5");
-                  
+                  var liE = document.createElement("li");
+
                   var a1E = document.createElement("a");
                   a1E.href = url;
                   a1E.textContent = title;
 
-                  d1e.appendChild(d2e, d32, a1e);
-                  elmt.appendChild(d3e, d2e, d1e);
+                  liE.appendChild(a1E);
+
+                  elmt.appendChild(liE);
                }
 
                break;
