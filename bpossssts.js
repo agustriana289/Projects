@@ -46,13 +46,9 @@ function processPostList12(root)
                   var a1E = document.createElement("a");
                   a1E.href = url;
                   a1E.textContent = title;
-
-                  liE.appendChild(l3E);
-                  l3E.appendChild(l4E);
-                  l4E.appendChild(a1E);
-                  elmt.appendChild(l4E);
-                  elmt.appendChild(l3E);
-                  elmt.appendChild(liE);
+                  
+                  a1E.innerHTML+= l4E.outerHTML + l3E.outerHTML;
+                  liE.appendChild(a1E);
                }
 
                break;
