@@ -34,7 +34,7 @@ function processPostList12(root)
                if (url && url.length > 0 && title && title.length > 0)
                {
                   var liE = document.createElement('li');
-                  liE.setAttribute('class', "list-group-item");
+                  liE.setAttribute('class', "list-group-item border-0");
 
                   var a1E = document.createElement("a");
                   a1E.href = url;
