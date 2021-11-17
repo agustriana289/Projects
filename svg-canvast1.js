@@ -12,13 +12,27 @@ var app = new Vue({
     this.importedFont = 'https://fonts.googleapis.com/css?family=Cookie|Signika:600';
     return {
       inlineStyles: `<style>@import url('${this.importedFont}');</style>`,
+      title: params.title || "LOGOKU",
+      title2: params.title2 || "",
+      title3: params.title3 || "",
+      requestedFill: params.fill || "#",
+      requestedFill2: params.fill2 || "#",
+      requestedFill3: params.fill3 || "#",
       resolution: 1024,
       useCustomEvent: true };
-
   },
 
-
-
+  computed: {
+    fill() {
+      return this.requestedFill || '#';
+    },
+    fill2() {
+      return this.requestedFill2 || '#';
+    },
+    fill3() {
+      return this.requestedFill3 || '#';
+    }
+  },
 
   mounted() {
     this.$nextTick(() => {
