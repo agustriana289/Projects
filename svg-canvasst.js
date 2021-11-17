@@ -16,6 +16,8 @@ var app = new Vue({
       title2: params.title2 || "LOGOKU",
       title3: params.title3 || "LOGOKU",
       requestedFill: params.fill || "#f15a29",
+      requestedFill2: params.fill2 || "#000000",
+      requestedFill3: params.fill3 || "#ffffff",
       resolution: 1024,
       useCustomEvent: true };
 
@@ -26,7 +28,7 @@ var app = new Vue({
       return this.requestedFill || '#3363a8';
     },
     fill2() {
-      return this.requestedFill2 || '#418df9';
+      return this.requestedFill2 || '#000000';
     },
     fill3() {
       return this.requestedFill3 || '#ffffff';
