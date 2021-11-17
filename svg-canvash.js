@@ -13,6 +13,8 @@ var app = new Vue({
     return {
       inlineStyles: `<style>@import url('${this.importedFont}');</style>`,
       title: params.title || "LOGOKU",
+      title2: params.title2 || "LOGOKU",
+      title3: params.title3 || "LOGOKU",
       requestedFill: params.fill || "#f15a29",
       resolution: 1024,
       useCustomEvent: true };
@@ -21,8 +23,15 @@ var app = new Vue({
 
   computed: {
     fill() {
-      return this.requestedFill || '#f15a29';
-    } },
+      return this.requestedFill || '#3363a8';
+    },
+    fill2() {
+      return this.requestedFill2 || '#418df9';
+    },
+    fill3() {
+      return this.requestedFill3 || '#ffffff';
+    }
+  },
 
 
   mounted() {
