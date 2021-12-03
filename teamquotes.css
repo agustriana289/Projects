@@ -27,7 +27,7 @@
 }
 
 .section-team .single-person:hover {
-	background: linear-gradient(to right, #016cec, #00b5f7);
+	background: linear-gradient(to right, #0693e3, #9b51e0);
 }
 
 .section-team .single-person .person-image {
@@ -40,7 +40,6 @@
 
 .section-team .single-person:hover .person-image {
 	padding: 12px;
-    border: 4px dashed #fff;
 }
 
 .section-team .single-person .person-image img {
@@ -50,18 +49,18 @@
 
 .section-team .single-person .person-image .icon {
 	position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,50%);
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background: linear-gradient(to right, #016cec, #00b5f7);
-    color: #fff;
-    border-radius: 50%;
-    font-size: 24px;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,50%);
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: linear-gradient(to right, #0693e3, #9b51e0);
+	color: #fff;
+	border-radius: 50%;
+	font-size: 24px;
 }
 
 .section-team .single-person:hover .person-image .icon {
