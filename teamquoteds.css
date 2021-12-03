@@ -1,6 +1,6 @@
 .section-team {
 	font-family: "Poppins", sans-serif;
-	padding: 80px 0;
+	padding: 0;
 }
 
 .section-team .header-section {
@@ -66,7 +66,7 @@
 .section-team .single-person:hover .person-image .icon {
 	background: none;
 	background-color: #7038a5;
-	color: #016cec;
+	color: #9b51e0;
 }
 
 .section-team .single-person .person-info .full-name {
@@ -78,7 +78,7 @@
 .section-team .single-person .person-info .speciality {
     text-transform: uppercase;
     font-size: 14px;
-    color: #016cec;
+    color: #9b51e0;
 }
 
 .section-team .single-person:hover .full-name,
