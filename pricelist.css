@@ -3,10 +3,6 @@
 	 padding-top: 70px;
 }
  #pricing-tables {
-	 background-color: #eee;
-	 padding: 30px 0;
-	 position: relative;
-	 font-family: 'Lato', sans-serif;
 }
  #pricing-tables .col-md-3, #pricing-tables .col-sm-6, #pricing-tables .col-xs-12 {
 	 padding-right: 0;
