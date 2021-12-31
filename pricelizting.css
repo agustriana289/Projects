@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
- body {
-	 padding-top: 70px;
-}
- #pricing-tables {
-}
- #pricing-tables .col-md-3, #pricing-tables .col-sm-6, #pricing-tables .col-xs-12 {
+#pricing-tables .col-md-3, #pricing-tables .col-sm-6, #pricing-tables .col-xs-12 {
 	 padding-right: 0;
 	 padding-left: 0;
 }
