@@ -161,13 +161,15 @@ element.style {
     background-image: none;
 }
 .ast-builder-menu-1 .main-header-menu .sub-menu {
-	background-color: #396eb0;
+	background-color: #c6cfe1;
+	border-radius: 20px;
 }
 .ast-builder-menu-1 .main-header-menu .sub-menu .menu-link {
-    color: #ffffff !important;
+    color: #2c4f75 !important;
     border-style: none;
 }
 .ast-desktop .ast-menu-hover-style-zoom > .menu-item > .menu-link:hover {
+	background: #c6cfe1;
     transition: unset !important;
     transform: unset !important;
 }
@@ -550,7 +552,7 @@ element.style {
   -moz-border-radius: 100px;
   border-radius: 100px;
   text-align: center;
-  background: #008ad5;
+  background: #2c4f75;
   color: #fff;
   font-size: 12px;
   margin-right: 20px;
