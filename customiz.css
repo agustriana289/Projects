@@ -82,7 +82,9 @@ body {
     border-color: #274b6f !important;
 }
 
-
+.ast-builder-menu-1 .sub-menu, .ast-builder-menu-1 .inline-on-mobile .sub-menu {
+    border-color: #959fb3;
+}
 a, .page-title {
     color: #ffffff !important;
 }
