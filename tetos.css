@@ -32,6 +32,10 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
     border-top-width: 0px !important;
     font-size: 16px !important;
 }
+
+.site-primary-footer-wrap a {
+	color: #1f1d36 !important;
+}
 .masonry-column {
   padding: 10px 10px;
 }
@@ -88,7 +92,7 @@ body {
     border-color: #959fb3;
 }
 a, .page-title {
-    color: #1f1d36 !important;
+    color: #bcbad1 !important;
 }
 .ast-builder-menu-1 .menu-item:hover > .menu-link, .ast-builder-menu-1 .menu-item > .menu-link, .ast-builder-menu-1 .inline-on-mobile .menu-item:hover > .ast-menu-toggle {
     color: #fff !important;
