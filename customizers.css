@@ -629,3 +629,6 @@ element.style {
     min-width: unset !important;
 	box-shadow: unset !important;
 }
+.ast-primary-header-bar {
+    background-color: #1f1d36 !important;
+}
