@@ -71,15 +71,15 @@ body {
     color:#ffffff;
 }
 .bg-primary {
-    background-color: #274b6f !important;
+    background-color: #1F1D36 !important;
 }
 .text-primary {
-    color: #274b6f !important;
+    color: #1F1D36 !important;
 }
 .btn-primary {
     color: #fff;
-    background-color: #274b6f !important;
-    border-color: #274b6f !important;
+    background-color: #1F1D36 !important;
+    border-color: #1F1D36 !important;
 }
 
 .ast-builder-menu-1 .sub-menu, .ast-builder-menu-1 .inline-on-mobile .sub-menu {
@@ -334,14 +334,14 @@ element.style {
   transform:rotate(360deg);
 }
 .pricing-block .inner-box .btn-box a:hover {
-    background-color: #274b6f !important;
-    border-color: #274b6f !important;
+    background-color: #1F1D36 !important;
+    border-color: #1F1D36 !important;
     color: #dde2ed !important;
 }
 .pricing-block .inner-box .btn-box a {
     background-color: #dde2ed !important;
     border-color: #dde2ed !important;
-    color: #274b6f !important;
+    color: #1F1D36 !important;
 }
 
 .pricing-block .price-box{
@@ -362,7 +362,7 @@ element.style {
 .pricing-block .price{
   display: block;
   font-size: 30px;
-	color: #274b6f !important;
+	color: #1F1D36 !important;
   font-weight: 700;
   color: #2c4f75;
 }
@@ -620,7 +620,7 @@ element.style {
 .iconiz {
     border-radius: unset !important;
     padding: unset !important;
-    background: #274b6f;
+    background: #1F1D36;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     min-height: unset !important;
