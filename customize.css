@@ -89,7 +89,7 @@ a, .page-title {
     color: #ffffff !important;
 }
 .ast-builder-menu-1 .menu-item:hover > .menu-link, .ast-builder-menu-1 .menu-item > .menu-link, .ast-builder-menu-1 .inline-on-mobile .menu-item:hover > .ast-menu-toggle {
-    color: #2C4F75 !important;
+    color: #fff !important;
 }
 #what-we-do{
 	background:#ffffff;
@@ -163,15 +163,15 @@ element.style {
     background-image: none;
 }
 .ast-builder-menu-1 .main-header-menu .sub-menu {
-	background-color: #c6cfe1;
+	background-color: #2a2a44;
 	border-radius: 20px;
 }
 .ast-builder-menu-1 .main-header-menu .sub-menu .menu-link {
-    color: #2c4f75 !important;
+    color: #fff !important;
     border-style: none;
 }
 .ast-desktop .ast-menu-hover-style-zoom > .menu-item > .menu-link:hover {
-	background: #c6cfe1;
+	background: #fff;
     transition: unset !important;
     transform: unset !important;
 }
@@ -187,7 +187,7 @@ element.style {
     padding-top: 5px;
 }
 .ast-builder-menu-1 .menu-item:hover > .menu-link, .ast-builder-menu-1 .inline-on-mobile .menu-item:hover > .ast-menu-toggle {
-    color: #2C4F75 !important;
+    color: #fff !important;
     background: unset;
 }
 @media (max-width: 544px) {
