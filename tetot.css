@@ -28,8 +28,9 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 }
 
 .site-primary-footer-wrap {
-    background-color: #3a628b  !important;
+    background-color: #9d682c  !important;
     border-top-width: 0px !important;
+    font-size: 16px !important;
 }
 .masonry-column {
   padding: 10px 10px;
@@ -68,7 +69,8 @@ body {
 .widget-title {
     font-size: 21px;
     font-size: 1.4rem;
-    color:#ffffff;
+    font-weight: bolder !important;
+    color: #1f1d36;
 }
 .bg-primary {
     background-color: #1F1D36 !important;
@@ -86,7 +88,7 @@ body {
     border-color: #959fb3;
 }
 a, .page-title {
-    color: #ffffff !important;
+    color: #1f1d36 !important;
 }
 .ast-builder-menu-1 .menu-item:hover > .menu-link, .ast-builder-menu-1 .menu-item > .menu-link, .ast-builder-menu-1 .inline-on-mobile .menu-item:hover > .ast-menu-toggle {
     color: #fff !important;
