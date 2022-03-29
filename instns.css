@@ -28,7 +28,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 }
 
 .site-primary-footer-wrap {
-    background-color: #9d682c  !important;
+    background-color: #61606e  !important;
     border-top-width: 0px !important;
     font-size: 16px !important;
 }
@@ -286,14 +286,14 @@ element.style {
   max-width: 370px;
   margin: 0 auto;
   border-bottom: 20px solid transparent;
-  border-color: #dde2ed !important;
+  border-color: #ffae52 !important;
   border-image-slice: 1;
 }
 
 .pricing-block .icon-box {
     position: relative;
     padding: 50px 30px 0;
-    background-color: #dde2ed !important;
+    background-color: #1f1d36 !important;
     text-align: center;
     border-radius: 30px 30px 0 0;
 }
@@ -320,20 +320,20 @@ element.style {
   padding: 10px;
 }
 .pricing-block .icon-box i {
-    border: 5px solid #dde2ed !important;
-	color: #dde2ed !important;
-  position: relative;
-  display: block;
-  height: 130px;
-  width: 130px;
-  line-height: 120px;
-  border-radius: 50%;
-  font-size: 50px;
-  -webkit-transition:all 600ms ease;
-  -ms-transition:all 600ms ease;
-  -o-transition:all 600ms ease;
-  -moz-transition:all 600ms ease;
-  transition:all 600ms ease;
+    border: 5px solid #ffab4c !important;
+    color: #1f1d36 !important;
+    position: relative;
+    display: block;
+    height: 130px;
+    width: 130px;
+    line-height: 120px;
+    border-radius: 50%;
+    font-size: 50px;
+    -webkit-transition:all 600ms ease;
+    -ms-transition:all 600ms ease;
+    -o-transition:all 600ms ease;
+    -moz-transition:all 600ms ease;
+    transition:all 600ms ease;
 }
 
 .pricing-block .inner-box:hover .icon-box i{
