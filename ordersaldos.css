@@ -9,6 +9,7 @@
 .elementor-55 .elementor-element.elementor-element-633e7a4:not(.elementor-motion-effects-element-type-background), 
 .elementor-47 .elementor-element.elementor-element-c2b7e3a:not(.elementor-motion-effects-element-type-background),
 .elementor-57 .elementor-element.elementor-element-51f82fb:not(.elementor-motion-effects-element-type-background),
+.elementor-71 .elementor-element.elementor-element-5e35658 .bdt-offcanvas-button, 
 .elementor-71 .elementor-element.elementor-element-5e35658 .bdt-offcanvas .bdt-offcanvas-bar
  {
     background-color: #5956e9 !important;
@@ -16,7 +17,7 @@
 
 
 .elementor-413 .elementor-element.elementor-element-8362c33 .elementor-nav-menu--dropdown {
-    background-color: #423fc5;
+    background-color: #423fc5 !important;
 }
 
 
@@ -57,6 +58,12 @@
     color: #f8f8f8 !important;
 }
 
+
+.elementor-413 .elementor-element.elementor-element-8362c33 .elementor-nav-menu--dropdown a:hover, 
+.elementor-413 .elementor-element.elementor-element-8362c33 .elementor-nav-menu--dropdown a.elementor-item-active, 
+.elementor-413 .elementor-element.elementor-element-8362c33 .elementor-nav-menu--dropdown a.highlighted {
+    background-color: #706df3 !important;
+}
 
 .elementor-42 .elementor-element.elementor-element-0c4cd34.elementor-view-framed .elementor-icon {
     background-color: #ffffff !important;
