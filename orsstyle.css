@@ -1,13 +1,14 @@
 .elementor-71 .elementor-element.elementor-element-20fb7834:not(.elementor-motion-effects-element-type-background) {
     background-color: #5956e9 !important;
 }
-.elementor-42 .elementor-element.elementor-element-ccc0309:not(.elementor-motion-effects-element-type-background) {
+.elementor-42 .elementor-element.elementor-element-ccc0309:not(.elementor-motion-effects-element-type-background), .elementor-49 .elementor-element.elementor-element-f374925:not(.elementor-motion-effects-element-type-background), .elementor-53 .elementor-element.elementor-element-8e9a01a:not(.elementor-motion-effects-element-type-background), .elementor-55 .elementor-element.elementor-element-633e7a4:not(.elementor-motion-effects-element-type-background), .elementor-47 .elementor-element.elementor-element-c2b7e3a:not(.elementor-motion-effects-element-type-background)
+ {
     background-color: #5956e9 !important;
 }
 .rough-annotation {
   display:none !important;
 }
-.elementor-42 .elementor-element.elementor-element-ac531c5 .elementor-heading-title {
+.elementor-42 .elementor-element.elementor-element-ac531c5 .elementor-heading-title, .elementor-49 .elementor-element.elementor-element-9fa8a4c .elementor-heading-title, .elementor-49 .elementor-element.elementor-element-2e45c15 .elementor-heading-title, .elementor-widget-image-box .elementor-image-box-title, .elementor-49 .elementor-element.elementor-element-9386caa .elementor-heading-title, .elementor-55 .elementor-element.elementor-element-7873874 .elementor-heading-title, .elementor-47 .elementor-element.elementor-element-690769c .elementor-heading-title, .elementor-47 .elementor-element.elementor-element-02b2e93 .elementor-heading-title, .elementor-47 .elementor-element.elementor-element-e21be2c .elementor-heading-title, .elementor-widget-heading .elementor-heading-title, .elementor-widget-image-box .elementor-image-box-title,  {
     color: #fed766 !important;
 }
 .elementor-42 .elementor-element.elementor-element-c6fef72 .elementor-button {
@@ -36,7 +37,7 @@
 .elementor-42 .elementor-element.elementor-element-23c8025 > .elementor-widget-container, .elementor-42 .elementor-element.elementor-element-86c09cc > .elementor-widget-container, .elementor-42 .elementor-element.elementor-element-8025a08 > .elementor-widget-container, .elementor-42 .elementor-element.elementor-element-96d8b1a > .elementor-widget-container {
     background-color: #5956e8 !important;
 }
-.elementor-42 .elementor-element.elementor-element-f491dcc .elementor-tab-title {
+.elementor-42 .elementor-element.elementor-element-f491dcc .elementor-tab-title, .elementor-toggle .elementor-tab-title {
     border-color: #fed766 !important;
     background-color: #5956e9 !important;
 }
