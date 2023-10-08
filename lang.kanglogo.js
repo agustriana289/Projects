@@ -1,6 +1,7 @@
 
 var arrLang = {
   "en-gb": {
+    "LANG": "Change language",
     "HOME": "Home",
     "FEATURE": "Feature",
     "HOW": "How We Work",
@@ -85,6 +86,7 @@ var arrLang = {
   },
 
   "zh-tw": {
+    "LANG": "Ubah Bahasa",
     "HOME": "Beranda",
     "FEATURE": "Fitur",
     "HOW": "Bagaimana Cara Kerja Kami",
