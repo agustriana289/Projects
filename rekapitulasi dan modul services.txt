@@ -1,0 +1,116 @@
+Rekapitulasi Pembuatan Modul Layanan (Folder Market)
+
+1. Pemodelan Database dan Migrasi:
+
+Model dan Migrasi Dibuat (di app/Market/Models dan database/migrations):
+ServiceCategory (tabel service_categories)
+Service (tabel services)
+ServicePackage (tabel service_packages)
+ServiceThumbnail (tabel service_thumbnails)
+ServiceReview (tabel service_reviews)
+Workspace (tabel workspaces)
+ReportedService (tabel reported_services)
+ServiceFinancialReport (tabel service_financial_reports)
+Migrasi Berhasil Dijalankan: Tabel-tabel sesuai skema telah dibuat di database.
+Catatan Penting: Semua model untuk modul ini berada di dalam folder app/Market/Models. File migrasi berada di direktori database/migrations seperti biasa.
+2. Membuat Relasi Antar Model (di app/Market/Models)
+
+Relasi antar model telah didefinisikan di dalam masing-masing file model di folder app/Market/Models. Ini termasuk relasi hasMany, belongsTo, dan hasOne antar model-model layanan dan model User, Order, serta Transaction (jika ada).
+Pengingat: Pastikan namespace yang benar (App\Market\Models) digunakan saat mendefinisikan relasi antar model di dalam folder Market. Untuk model di luar folder Market (misalnya, User), gunakan namespace lengkap (\App\Models\User).
+3. Membuat CRUD Interface di Backend (Backpack)
+
+Controller CRUD telah dibuat di direktori app/Http/Controllers/Admin/ menggunakan perintah php artisan backpack:crud.
+Konfigurasi dasar controller CRUD (setup(), setupListOperation(), setupCreateOperation(), setupUpdateOperation()) telah dimulai.
+Pengingat: Saat mengkonfigurasi CRUD::setModel(), pastikan Anda menggunakan path model yang benar (\App\Market\Models\NamaModel::class).
+Untuk tahap awal, disarankan menggunakan CRUD::setFromDb() untuk membiarkan Backpack otomatis menentukan kolom dan field.
+4. Membuat Frontend Interface Dasar (Controller di app/Market/Http/Controllers/Frontend)
+
+Route frontend telah didefinisikan di routes/web.php dengan awalan /services dan /categories.
+Controller ServiceController telah dibuat di app/Market/Http/Controllers/Frontend/.
+Method index, show, dan category telah diimplementasikan di controller untuk mengambil dan menampilkan data layanan dan kategori.
+View Blade dasar telah dibuat di resources/views/frontend/services/.
+Arahkan Saat Ini:
+
+Saat ini, Anda berada pada tahap pengembangan frontend dasar untuk menampilkan data layanan. Langkah selanjutnya yang perlu Anda lakukan adalah:
+
+Melengkapi View Blade: Kembangkan lebih lanjut tampilan index.blade.php, show.blade.php, dan category.blade.php agar menampilkan data layanan, paket, thumbnail, dan informasi lainnya dengan lebih baik dan sesuai desain yang Anda inginkan.
+Styling Frontend: Tambahkan CSS dan JavaScript untuk mempercantik tampilan frontend.
+Implementasi Fitur Tambahan Frontend:
+Tombol "Pesan Sekarang" pada detail layanan (mungkin mengarah ke halaman pemesanan atau keranjang).
+Tampilan preview thumbnail.
+
+
+Pengingat Penting:
+
+Folder Struktur: Ingatlah bahwa untuk modul ini, model berada di app/Market/Models, controller (frontend) berada di app/Market/Http/Controllers/Frontend, dan untuk saat ini, resource (jika ada, seperti Request) akan berada di app/Http/Requests (atau bisa juga di subfolder Market di dalam app/Http/Requests jika Anda ingin mengorganisasinya lebih lanjut).
+
+
+#######################
+
+Penyesuaian Model dan Migrasi (Tahap 1):
+
+Model Service: Tetap relevan untuk merepresentasikan jenis layanan desain (misalnya, "Desain Logo", "Desain Banner", "Desain Brand Guideline").
+
+Kolom yang mungkin dibutuhkan (ditambah jenis layanan): title, slug, description, content, thumbnail, service_type (misalnya, "logo", "banner", "brand_guideline", "graphic_lain"), category_id (FK ke service_categories), user_id (penyedia), status, created_at, updated_at.
+Model ServicePackage: Akan merepresentasikan paket-paket yang Anda tawarkan (Standar, Premium, Enterprise).
+
+Kolom yang dibutuhkan (disesuaikan dengan pricelist): service_id (FK ke services), name (misalnya, "Standar", "Premium", "Enterprise"), price (harga dalam IDR), max_pages (jumlah halaman maksimal untuk Brand Guideline), major_revisions (jumlah revisi mayor), minor_revisions (teks untuk revisi minor tanpa batas), mockup (boolean, apakah termasuk mockup), color_palette (boolean, apakah termasuk panduan warna), usage_guideline (boolean, apakah termasuk panduan penggunaan), logo_visual_elements (boolean, apakah termasuk logo & elemen visual), editable_text_font (boolean, apakah teks & font dapat diedit), final_files (teks yang menyebutkan format file akhir, misalnya "File PNG & PDF"), duration (durasi pengerjaan, perlu ditambahkan), created_at, updated_at.
+Model ServicePackageFeature: Mungkin masih berguna jika ada fitur tambahan spesifik di luar yang disebutkan dalam paket utama. Jika semua fitur utama sudah tercakup di model ServicePackage, model ini bisa dipertimbangkan kembali atau digunakan untuk detail tambahan.
+
+Model ServiceCategory: Tetap relevan untuk mengkategorikan jenis layanan (misalnya, "Desain Logo", "Desain Banner", "Brand Guideline").
+
+Kolom: name, slug, created_at, updated_at.
+Model ServiceThumbnail: Tetap relevan untuk preview gambar layanan.
+
+Kolom: service_id, path, order (opsional), created_at, updated_at.
+Model ServiceReview: Tetap relevan untuk ulasan.
+
+Kolom: service_id, user_id, rating, comment, created_at, updated_at.
+Model Workspace: Tetap relevan untuk detail proyek.
+
+Kolom: service_id, order_id (opsional), user_id, status, final_file_path, created_at, updated_at.
+Model ReportedService: Tetap relevan untuk laporan.
+
+Kolom: service_id, reporter_id, reason, status, created_at, updated_at.
+Model ServiceFinancialReport: Tetap relevan untuk laporan keuangan.
+
+Kolom: service_id, transaction_id, amount, type, description, created_at, updated_at.
+Perintah Artisan untuk Membuat/Memodifikasi Model dan Migrasi:
+
+Anda mungkin perlu membuat migrasi baru untuk menambahkan kolom-kolom baru ke tabel service_packages sesuai dengan fitur di pricelist.
+Bash
+
+php artisan make:migration add_features_to_service_packages_table --table=service_packages
+Kemudian edit file migrasi ini (database/migrations/) untuk menambahkan kolom-kolom seperti max_pages, major_revisions, mockup, color_palette, usage_guideline, logo_visual_elements, editable_text_font, final_files, dan duration.
+Jangan lupa untuk menjalankan migrasi setelah mengedit file:
+Bash
+
+php artisan migrate
+Tahap 2: Membuat Relasi Antar Model
+
+Relasi antar model akan tetap serupa dengan rekapitulasi sebelumnya. Pastikan Anda mendefinisikan relasi yang sesuai di setiap file model.
+Tahap 3: Membuat CRUD Interface di Backend (Backpack)
+
+CRUD Controller: Buat CRUD controller untuk Service, ServicePackage, dan ServiceCategory.
+Konfigurasi CRUD Controller:
+ServiceCrudController:
+Tambahkan field untuk service_type (mungkin menggunakan select dengan pilihan "logo", "banner", "brand_guideline", "graphic_lain").
+Tambahkan relasi ke ServiceCategory dan ServiceThumbnails.
+ServicePackageCrudController:
+Tambahkan field untuk semua kolom yang ada di model ServicePackage (sesuai dengan fitur di pricelist). Gunakan tipe field yang sesuai (misalnya, number untuk jumlah revisi dan halaman, checkbox untuk fitur boolean, text untuk nama paket dan format file, number untuk harga).
+Tambahkan relationship field agar terhubung dengan Service.
+ServiceCategoryCrudController: Standar untuk manajemen kategori.
+Tahap 4: Membuat Frontend Interface
+
+Route: Buat route untuk menampilkan daftar layanan berdasarkan jenisnya (misalnya, /desain-logo, /desain-banner, /brand-guideline), dan detail setiap layanan.
+Controller Frontend (ServiceController): Ambil data layanan berdasarkan jenis atau slug untuk ditampilkan di frontend.
+View Blade: Buat template untuk menampilkan daftar layanan per jenis dan detail setiap layanan, termasuk daftar paket dengan fitur dan harganya.
+Tahap 5: Implementasi Fitur Tambahan
+
+Manajemen Thumbnail, Review, Workspace, Laporan Service, Laporan Keuangan: Implementasinya akan serupa dengan yang dijelaskan sebelumnya. Anda perlu membuat CRUD interface di Backpack untuk model-model ini dan logika yang sesuai di frontend jika diperlukan.
+Fokus Awal (Disarankan):
+
+Pemodelan Database dan Migrasi (Tahap 1) - Sesuaikan kolom di service_packages berdasarkan pricelist.
+Membuat Relasi Antar Model (Tahap 2).
+Membuat CRUD Interface dasar untuk Service, ServicePackage, dan ServiceCategory di Backend (Bagian awal Tahap 3) - Pastikan field di ServicePackageCrudController sesuai dengan fitur di pricelist.
+Dengan fokus pada tiga tahap awal ini, Anda akan memiliki struktur dasar untuk mengelola layanan desain dan paket-paketnya melalui antarmuka admin Backpack. Setelah itu, Anda dapat melanjutkan dengan implementasi fitur-fitur tambahan dan tampilan frontend.
